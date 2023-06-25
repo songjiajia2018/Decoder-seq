@@ -1,5 +1,5 @@
 # Decoder-seq
-preprocessing of Decoder-seq raw data
+Preprocessing of Decoder-seq raw data
 
 Starting with FASTAQ files after QC, this pipeline analyses the data to produce a count matrix that 
 represents the predicted number of unique molecules derived from each gene at each spot. 
