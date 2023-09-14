@@ -1,6 +1,6 @@
 # Preprocessing of Decoder-seq raw data
 
-Starting with FASTAQ files after QC, this pipeline analyses the data to produce a count matrix that 
+Starting with FASTQ files after QC, this pipeline analyses the data to produce a count matrix that 
 represents the predicted number of unique molecules derived from each gene at each spot. 
 
 
@@ -13,7 +13,7 @@ Read 2 contains cDNA. For read1, beginning at 5', 1-8 represents barcodeX, 39-46
 Both barcodes X and Y contain 50 unique 8bp sequences in the same order.	
 The filename for the output count matrix is ALL_XQ2_sub_2_trim_tagged_dge.txt.	
 The barcode and its coordinates are contained in the xy_index.txt file for further plotting and analysis.
-
+```
 python run_pipeline.py --R1 ALL_XQ2_sub_1.fq.gz \
 					   --R2 ALL_XQ2_sub_2.fq.gz \
 					   --map hg38 \
@@ -39,7 +39,7 @@ Options for inference:
 --endy	    position of barcode Y, default is 46
 --startumi  position of umi, default is 46
 --endumi    position of umi, default is 58
-
+```
 			
 												
 This script requires the following softwares and versions:
@@ -50,3 +50,4 @@ starcode v1.3
 samtools 1.9
 Drop-seq_tools 2.3.0 
 
+Author: Jia Song, Weizhou Qian, Di Sun
